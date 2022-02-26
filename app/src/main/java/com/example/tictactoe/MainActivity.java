@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean click8;
     private boolean click9;
 
-    private boolean player = false;
+    private boolean player = true;
 
     private void changePlayer () {
         player = !player;
@@ -52,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void setButtons () {
 
-        ImageView symbol = findViewById(R.id.symbol);
         Toast errorToast = Toast.makeText(MainActivity.this,
                 R.string.errorToast,
                 Toast.LENGTH_SHORT);
@@ -62,18 +60,18 @@ public class MainActivity extends AppCompatActivity {
         box1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (click1) {
+                //if (click1) {
                     if (player) {
-                        symbol.setImageResource(R.drawable.circle);
+                        box1.setBackgroundResource(R.drawable.circle);
                     } else {
-                        symbol.setImageResource(R.drawable.cross);
+                        box1.setBackgroundResource(R.drawable.cross);
                     }
                     click1 = false;
                     setText();
                     changePlayer();
-                } else {
+                /*} else {
                     errorToast.show();
-                }
+                }*/
             }
         });
     }
@@ -81,7 +79,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setButtons ();
         setContentView(R.layout.activity_main);
+        setButtons ();
+        setText();
     }
 }
