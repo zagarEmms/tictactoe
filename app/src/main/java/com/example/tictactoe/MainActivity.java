@@ -3,9 +3,11 @@ package com.example.tictactoe;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,12 +38,24 @@ public class MainActivity extends AppCompatActivity {
         player = !player;
     }
 
+    private void setText () {
+
+        TextView textView = findViewById(R.id.playersTurn);
+
+        if (player) {
+            textview.setText(R.string.player1);
+        } else {
+            textview.setText(R.string.player2);
+        }
+    }
+
     private void setButtons () {
 
         ImageView symbol = findViewById(R.id.symbol);
-        Toast correctToast = Toast.makeText(MainActivity.this,
-                R.string.turn_toast,
+        Toast errorToast = Toast.makeText(MainActivity.this,
+                R.string.errorToast,
                 Toast.LENGTH_SHORT);
+        errorToast.setGravity(Gravity.TOP, 0, 500);
 
         box1 = (Button) findViewById(R.id.box1);
         box1.setOnClickListener(new View.OnClickListener() {
