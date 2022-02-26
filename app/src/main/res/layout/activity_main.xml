@@ -11,7 +11,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4.5"
+        android:layout_weight="4"
         android:orientation="vertical"
         android:background="#B2D3C2">
 
@@ -49,8 +49,7 @@
             android:id="@+id/box3"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="end"
-            android:gravity="end"/>
+            android:layout_gravity="end"/>
     </FrameLayout>
 
     <FrameLayout
@@ -58,7 +57,7 @@
         android:layout_height="0dp"
         android:layout_weight="2"
         android:orientation="horizontal"
-        android:paddingTop="25dp"
+        android:paddingTop="15dp"
         android:background="#25523B">
 
         <ImageButton
@@ -77,8 +76,7 @@
             android:id="@+id/box6"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="end"
-            android:gravity="end"/>
+            android:layout_gravity="end"/>
     </FrameLayout>
 
     <FrameLayout
@@ -86,7 +84,7 @@
         android:layout_height="0dp"
         android:layout_weight="2"
         android:orientation="horizontal"
-        android:paddingTop="25dp"
+        android:paddingTop="10dp"
         android:background="#25523B">
 
         <ImageButton
@@ -105,8 +103,7 @@
             android:id="@+id/box9"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="end"
-            android:gravity="end"/>
+            android:layout_gravity="end"/>
     </FrameLayout>
 
 </LinearLayout>
