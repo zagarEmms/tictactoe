@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">tictactoe</string>
+
+    <string name="player1">PLAYER 1\'S TURN</string>
+    <string name="player2">PLAYER 2\'S TURN</string>
+
+    <string name="errorToast">Wrong box!</string>
+
 </resources>
