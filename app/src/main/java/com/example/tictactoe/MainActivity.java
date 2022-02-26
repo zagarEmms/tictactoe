@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.playersTurn);
 
         if (player) {
-            textView.setText(R.string.player1);
-        } else {
             textView.setText(R.string.player2);
+        } else {
+            textView.setText(R.string.player1);
         }
     }
 
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         Toast errorToast = Toast.makeText(MainActivity.this,
                 R.string.errorToast,
                 Toast.LENGTH_SHORT);
-        errorToast.setGravity(Gravity.TOP, 0, 500);
+        errorToast.setGravity(Gravity.TOP, 0, 600);
 
         box1 = (ImageButton) findViewById(R.id.box1);
         box1.setOnClickListener(new View.OnClickListener() {
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                     if (player) {
                         box1.setBackgroundResource(R.drawable.circle);
                     } else {
-                        //box1.setImageResource(R.drawable.cross);
+                        box1.setBackgroundResource(R.drawable.cross);
                     }
                     click1 = false;
                     setText();
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                     if (player) {
                         box2.setBackgroundResource(R.drawable.circle);
                     } else {
-                        box2.setImageResource(R.drawable.cross);
+                        box2.setBackgroundResource(R.drawable.cross);
                     }
                     click2 = false;
                     setText();
@@ -98,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                     if (player) {
                         box3.setBackgroundResource(R.drawable.circle);
                     } else {
-                        box3.setImageResource(R.drawable.cross);
+                        box3.setBackgroundResource(R.drawable.cross);
                     }
                     click3 = false;
                     setText();
@@ -116,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                     if (player) {
                         box4.setBackgroundResource(R.drawable.circle);
                     } else {
-                        box4.setImageResource(R.drawable.cross);
+                        box4.setBackgroundResource(R.drawable.cross);
                     }
                     click4 = false;
                     setText();
@@ -134,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
                     if (player) {
                         box5.setBackgroundResource(R.drawable.circle);
                     } else {
-                        box5.setImageResource(R.drawable.cross);
+                        box5.setBackgroundResource(R.drawable.cross);
                     }
                     click5 = false;
                     setText();
@@ -152,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
                     if (player) {
                         box6.setBackgroundResource(R.drawable.circle);
                     } else {
-                        box6.setImageResource(R.drawable.cross);
+                        box6.setBackgroundResource(R.drawable.cross);
                     }
                     click6 = false;
                     setText();
@@ -170,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
                     if (player) {
                         box7.setBackgroundResource(R.drawable.circle);
                     } else {
-                        box7.setImageResource(R.drawable.cross);
+                        box7.setBackgroundResource(R.drawable.cross);
                     }
                     click7 = false;
                     setText();
@@ -188,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
                     if (player) {
                         box8.setBackgroundResource(R.drawable.circle);
                     } else {
-                        box8.setImageResource(R.drawable.cross);
+                        box8.setBackgroundResource(R.drawable.cross);
                     }
                     click8 = false;
                     setText();
@@ -206,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
                     if (player) {
                         box9.setBackgroundResource(R.drawable.circle);
                     } else {
-                        box9.setImageResource(R.drawable.cross);
+                        box9.setBackgroundResource(R.drawable.cross);
                     }
                     click9 = false;
                     setText();

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,12 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4.5"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:background="#B2D3C2">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:textSize="25sp"
+            android:textColor="#043927"
             android:id="@+id/playersTurn"/>
     </FrameLayout>
 
@@ -25,31 +30,27 @@
         android:layout_height="0dp"
         android:layout_weight="2"
         android:orientation="horizontal"
+        android:paddingTop="25dp"
         android:background="#25523B">
 
         <ImageButton
             android:id="@+id/box1"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginStart="15dp"
-            android:drawableEnd="@+id/symbol"
-            android:layout_gravity="center_vertical"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="start" />
 
         <ImageButton
             android:id="@+id/box2"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginStart="150dp"
-            android:drawableEnd="@+id/symbol"
-            android:layout_gravity="center_vertical"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"/>
 
         <ImageButton
             android:id="@+id/box3"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginStart="290dp"
-            android:drawableEnd="@+id/symbol"
-            android:layout_gravity="center_vertical"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:gravity="end"/>
     </FrameLayout>
 
     <FrameLayout
@@ -57,31 +58,27 @@
         android:layout_height="0dp"
         android:layout_weight="2"
         android:orientation="horizontal"
+        android:paddingTop="25dp"
         android:background="#25523B">
 
         <ImageButton
             android:id="@+id/box4"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginStart="15dp"
-            android:drawableEnd="@+id/symbol"
-            android:layout_gravity="center_vertical"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="start" />
 
         <ImageButton
             android:id="@+id/box5"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginStart="150dp"
-            android:drawableEnd="@+id/symbol"
-            android:layout_gravity="center_vertical"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"/>
 
         <ImageButton
             android:id="@+id/box6"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginStart="290dp"
-            android:drawableEnd="@+id/symbol"
-            android:layout_gravity="center_vertical"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:gravity="end"/>
     </FrameLayout>
 
     <FrameLayout
@@ -89,31 +86,27 @@
         android:layout_height="0dp"
         android:layout_weight="2"
         android:orientation="horizontal"
+        android:paddingTop="25dp"
         android:background="#25523B">
 
         <ImageButton
             android:id="@+id/box7"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginStart="15dp"
-            android:drawableEnd="@+id/symbol"
-            android:layout_gravity="center_vertical"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="start" />
 
         <ImageButton
             android:id="@+id/box8"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginStart="150dp"
-            android:drawableEnd="@+id/symbol"
-            android:layout_gravity="center_vertical"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"/>
 
         <ImageButton
             android:id="@+id/box9"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginStart="290dp"
-            android:drawableEnd="@+id/symbol"
-            android:layout_gravity="center_vertical"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:gravity="end"/>
     </FrameLayout>
 
 </LinearLayout>
