@@ -6,21 +6,22 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button box1;
-    private Button box2;
-    private Button box3;
-    private Button box4;
-    private Button box5;
-    private Button box6;
-    private Button box7;
-    private Button box8;
-    private Button box9;
+    private ImageButton box1;
+    private ImageButton box2;
+    private ImageButton box3;
+    private ImageButton box4;
+    private ImageButton box5;
+    private ImageButton box6;
+    private ImageButton box7;
+    private ImageButton box8;
+    private ImageButton box9;
 
     private boolean click1;
     private boolean click2;
@@ -43,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.playersTurn);
 
         if (player) {
-            textview.setText(R.string.player1);
+            textView.setText(R.string.player1);
         } else {
-            textview.setText(R.string.player2);
+            textView.setText(R.string.player2);
         }
     }
 
@@ -57,18 +58,21 @@ public class MainActivity extends AppCompatActivity {
                 Toast.LENGTH_SHORT);
         errorToast.setGravity(Gravity.TOP, 0, 500);
 
-        box1 = (Button) findViewById(R.id.box1);
+        box1 = (ImageButton) findViewById(R.id.box1);
         box1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (click1) {
                     if (player) {
-                        symbol.setImageAlpha();
-                        click1 = false;
+                        symbol.setImageResource(R.drawable.circle);
                     } else {
-                        symbol.setImageAlpha();
-                        click1 = false;
+                        symbol.setImageResource(R.drawable.cross);
                     }
+                    click1 = false;
+                    setText();
+                    changePlayer();
+                } else {
+                    errorToast.show();
                 }
             }
         });
